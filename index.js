@@ -8,6 +8,7 @@ drums.forEach(function(drum) {
 function handleClick() {
   changeButtonColor(this);
   let letter = this.innerHTML;
+  buttonAnimation(letter);
   playAudio(letter);
 }
 
@@ -16,6 +17,7 @@ function handleKey(e) {
   let letter = e.key;
   let button = document.querySelector("." + letter);
   changeButtonColor(button);
+  buttonAnimation(letter);
   playAudio(letter);
 }
 
@@ -74,4 +76,12 @@ function playAudio(letter) {
   if (audio != null) {
     audio.play();
   }
+}
+
+function buttonAnimation(currentKey) {
+  let button = document.querySelector("." + currentKey);
+  button.classList.add("pressed");
+  setTimeout(function () {
+    button.classList.remove("pressed");
+  }, 125);
 }
