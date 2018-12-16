@@ -38,43 +38,45 @@ function changeButtonColor(button) {
 document.addEventListener("keypress", handleKey);
 
 function playAudio(letter) {
-  let audio = null;
 
   switch (letter) {
     case "w":
-      audio = new Audio("sounds/tom-1.mp3");
+      let tom1 = new Audio("sounds/tom-1.mp3");
+      tom1.play();
       break;
 
     case "a":
-      audio = new Audio("sounds/tom-2.mp3");
+      let tom2 = new Audio("sounds/tom-2.mp3");
+      tom2.play();
       break;
 
     case "s":
-      audio = new Audio("sounds/tom-3.mp3");
+      let tom3 = new Audio("sounds/tom-3.mp3");
+      tom3.play();
       break;
 
     case "d":
-      audio = new Audio("sounds/tom-4.mp3");
+      let tom4 = new Audio("sounds/tom-4.mp3");
+      tom4.play();
       break;
 
     case "j":
-      audio = new Audio("sounds/snare.mp3");
+      let snare = new Audio("sounds/snare.mp3");
+      snare.play();
       break;
 
     case "k":
-      audio = new Audio("sounds/crash.mp3");
+      let crash = new Audio("sounds/crash.mp3");
+      crash.play();
       break;
 
     case "l":
-      audio = new Audio("sounds/kick-bass.mp3");
+      let kick = new Audio("sounds/kick-bass.mp3");
+      kick.play()
       break;
 
     default:
       console.log(letter);
-  }
-
-  if (audio != null) {
-    audio.play();
   }
 }
 
