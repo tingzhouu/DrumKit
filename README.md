@@ -8,7 +8,7 @@ This repository serves to document my learning of using Javascript in a webpage 
 Event Listeners for button click and keyboard press
 
 ## Getting Started
-Click on link: https://tingzhouu.github.com/Dicee
+Click on link: https://tingzhouu.github.com/DrumKit
 Once page is loaded, refresh the page to start rolling!
 
 
